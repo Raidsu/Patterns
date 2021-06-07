@@ -8,13 +8,13 @@ namespace Asteroids
         [SerializeField] private float _speed;
         [SerializeField] private float _acceleration;
         [SerializeField] private float _hp;
-        [SerializeField] private Rigidbody2D _bullet;
+        [SerializeField] private Sprite _bullet;
         [SerializeField] private Transform _barrel;
         [SerializeField] private float _force;
         private Camera _camera;
         private Ship _ship;
         private GetDamage _damage;
-        private BulletPool _bulletPool;
+        
         
         private void Start()
         {
@@ -23,8 +23,8 @@ namespace Asteroids
             var rotation = new RotationShip(transform);
             _ship = new Ship(moveTransform, rotation);
             _damage = new GetDamage();
-            _bulletPool = new BulletPool(_bullet.gameObject);
-            _bulletPool.CreateBullets(20);
+            ServiceLocator.SetService<IServiceLocator>(new BulletPool(_bullet));
+            ServiceLocator.Resolve<IServiceLocator>().CreateBullets(20);
         }
 
         private void Update()
@@ -46,7 +46,7 @@ namespace Asteroids
 
             if (Input.GetButtonDown("Fire1"))
             {
-                var temAmmunition = _bulletPool.GetBullet();
+                var temAmmunition = ServiceLocator.Resolve<IServiceLocator>().GetBullet();
                 temAmmunition.transform.position = _barrel.position;
                 temAmmunition.transform.rotation = _barrel.rotation;
                 temAmmunition.GetComponent<Rigidbody2D>().AddForce(_barrel.up * _force);
