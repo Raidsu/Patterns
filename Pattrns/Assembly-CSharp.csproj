@@ -52,6 +52,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BulletBuilder\BuilderExtensions.cs" />
      <Compile Include="Assets\Scripts\BulletMarker.cs" />
      <Compile Include="Assets\Scripts\BulletPool.cs" />
      <Compile Include="Assets\Scripts\Damage.cs" />
@@ -62,6 +63,8 @@
      <Compile Include="Assets\Scripts\GetDamage.cs" />
      <Compile Include="Assets\Scripts\IDamage.cs" />
      <Compile Include="Assets\Scripts\IEnemyShipFactory.cs" />
+     <Compile Include="Assets\Scripts\ServiceLocators\IServiceLocator.cs" />
+     <Compile Include="Assets\Scripts\ServiceLocators\ServiceLocator.cs" />
      <Compile Include="Assets\Scripts\Test\Starter.cs" />
      <Compile Include="Assets\Scripts\Test\IAmmunition.cs" />
      <Compile Include="Assets\Scripts\RotationShip.cs" />
@@ -725,8 +728,6 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/Любовь/Desktop/Pattrns/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

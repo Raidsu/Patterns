@@ -4,15 +4,15 @@ using UnityEngine;
 
 namespace Asteroids
 {
-    public class BulletPool
+    public class BulletPool : IServiceLocator
     {
         private Dictionary<int,GameObject> _clip;
-        private readonly GameObject _bullet;
-        private BulletMarker _bulletMarker;
-        public BulletPool(GameObject bulletPrefab)
+        private readonly Sprite _bulletSprite;
+        private readonly BulletMarker _bulletMarker;
+        public BulletPool(Sprite bulletSpritePrefab)
         {
             _clip = new Dictionary<int, GameObject>();
-            _bullet = bulletPrefab;
+            _bulletSprite = bulletSpritePrefab;
             _bulletMarker = new BulletMarker();
             _bulletMarker.DestroyBullet += ReturnBullet;
         }
@@ -21,7 +21,8 @@ namespace Asteroids
         {
             for (var index = 0; index < numOfBulletsToCreate; index++)
             {
-                var bullet = Object.Instantiate(_bullet);
+                var bullet = new GameObject().SetName("Bullet").AddBoxCollider2D().AddRigidbody2D(2f).AddSprite(_bulletSprite);
+                bullet.gameObject.AddComponent<BulletMarker>();
                 _clip.Add(bullet.GetInstanceID(),bullet);
                 bullet.SetActive(false);
             }
