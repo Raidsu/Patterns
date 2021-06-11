@@ -2,18 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="010c87b3-4dad-421e-bbab-92d314f958e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BulletBuilder.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BulletBuilder/BuilderExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BulletBuilder/BuilderExtensions.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ServiceLocators.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ServiceLocators/IServiceLocator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ServiceLocators/IServiceLocator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ServiceLocators/ServiceLocator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ServiceLocators/ServiceLocator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/Aim.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/Aim.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/AimModification.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/AimModification.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/Bullet.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/Bullet.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/IAim.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/IAim.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/IPlayerInventory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/IPlayerInventory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/ShipWeapon.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/ShipWeapon.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/WeaponModifications.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/WeaponModifications.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IAttack.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IAttack.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LockWeapon.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LockWeapon/LockWeapon.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LockWeapon/LockWeapon.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LockWeapon/WeaponProxy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LockWeapon/WeaponProxy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MagicAttack.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MagicAttack.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parsing.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parsing/IUnit.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parsing/IUnit.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parsing/IUnitFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parsing/IUnitFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parsing/Infantry.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parsing/Infantry.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parsing/InfantryFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parsing/InfantryFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parsing/Mag.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parsing/Mag.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parsing/MagFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parsing/MagFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parsing/ParseFile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parsing/ParseFile.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parsing/ParsingStarter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parsing/ParsingStarter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parsing/UnitFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parsing/UnitFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PhysicalAttack.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PhysicalAttack.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerAttack.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerAttack.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pattrns/.idea/indexLayout.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pattrns/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pattrns/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BulletPool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameStarter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameStarter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Object Pool/EnemyPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Object Pool/EnemyPool.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ServiceLocators/IServiceLocator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ServiceLocators/IServiceLocator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,23 +69,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Parsing/ParseFile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAFB29D5-2338-47FB-B4ED-CF8D7C32B1E3/42/273c6b76/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3C9E850C-90C5-48A0-AF7E-388089BBDAE9/91/2eae9cd6/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Parsing/IUnitFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Parsing/UnitFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAFB29D5-2338-47FB-B4ED-CF8D7C32B1E3/de/ec41d8b4/StreamReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10564ED1-54D6-47E1-94BE-F4AEF8878649/b7/4a77c2fd/Random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAFB29D5-2338-47FB-B4ED-CF8D7C32B1E3/28/ed0fee40/File.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Parsing/MagFactory.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Test/Inventory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Test/IMap.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Test/Example3.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Test/Example2.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Test/IInventory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Test/IWeapon.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Test/IAmmunition.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Test/Ammunition.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Test/Weapon.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Test/Starter.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Test/IPlayerFactory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Test/IPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Test/Mob.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Test/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Test/PlayerFactory.cs" />
@@ -48,23 +88,50 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Damage.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EnemyShip.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/IEnemyShipFactory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Object Pool/EnemyPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EnemyShipFactory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EnemyShipMove.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/IDamage.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ship.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameStarter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EnemyMarker.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GetDamage.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ObjectPool/ObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ObjectPool/ViewServices.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BulletMarker.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ServiceLocators/ServiceLocator.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ServiceLocators/IServiceLocator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BulletBuilder/BuilderExtensions.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerAttack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/IAttack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PhysicalAttack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MagicAttack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Parsing/InfantryDactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Parsing/Unit.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Object Pool/EnemyPool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameStarter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Aim/Weapons.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Aim/ShipWeapon.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Aim/IPlayerInventory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Aim/Bullet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ServiceLocators/IServiceLocator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BulletPool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Aim/IAim.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Aim/WeaponModifications.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Aim/AimModification.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Aim/Aim.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LockWeapon/LockWeapon.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LockWeapon/WeaponProxy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Parsing/IUnit.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Parsing/Mag.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Parsing/Infantry.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Parsing/IMagFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Parsing/IInfantryFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Parsing/ParseFile.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Parsing/ParsingStarter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Parsing/UnitFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Parsing/MagFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Parsing/InfantryFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Parsing/IUnitFactory.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ie46dTaFKVMP6XiiGtdSalAgvM" />
@@ -128,6 +195,13 @@
       <workItem from="1622701030442" duration="560000" />
       <workItem from="1622715951971" duration="1112000" />
       <workItem from="1622783136306" duration="468000" />
+      <workItem from="1623135045070" duration="7581000" />
+      <workItem from="1623227154066" duration="4693000" />
+      <workItem from="1623234211883" duration="985000" />
+      <workItem from="1623302451766" duration="10707000" />
+      <workItem from="1623322390396" duration="209000" />
+      <workItem from="1623393493762" duration="6165000" />
+      <workItem from="1623400196801" duration="54000" />
     </task>
     <servers />
   </component>
