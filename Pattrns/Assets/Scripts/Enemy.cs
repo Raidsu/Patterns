@@ -1,6 +1,8 @@
 ﻿using System;
 using Asteroids.Object_Pool;
+using TreeEditor;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Asteroids
 {
@@ -11,6 +13,7 @@ namespace Asteroids
         private Transform _rotPool;
         private Health _health;
         private Damage _damage;
+        private Rigidbody2D _rigidbody;
 
         public Damage Damage
         {
@@ -112,8 +115,13 @@ namespace Asteroids
                 Destroy(gameObject);
             }
         }
-        
-        
-        
+
+
+        public void AddForce()
+        {
+            var flightVector = Random.insideUnitCircle;
+            _rigidbody = gameObject.GetComponent<Rigidbody2D>();
+            _rigidbody.AddForce(new Vector2(flightVector.x,flightVector.y),ForceMode2D.Impulse);
+        }
     }
 }

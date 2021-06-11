@@ -1,17 +1,22 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Asteroids.Aim;
 using UnityEngine;
 
 namespace Asteroids
 {
-    public class BulletPool : IServiceLocator
+    public class BulletPool : IServiceLocator , IPlayerInventory
     {
-        private Dictionary<int,GameObject> _clip;
+        private Dictionary<GameObject,IPlayerInventory> _clip;
         private readonly Sprite _bulletSprite;
         private readonly BulletMarker _bulletMarker;
+        public Rigidbody2D BulletInstance { get; }
+        
+        
+        
         public BulletPool(Sprite bulletSpritePrefab)
         {
-            _clip = new Dictionary<int, GameObject>();
+            _clip = new Dictionary<GameObject, IPlayerInventory>();
             _bulletSprite = bulletSpritePrefab;
             _bulletMarker = new BulletMarker();
             _bulletMarker.DestroyBullet += ReturnBullet;
@@ -23,24 +28,53 @@ namespace Asteroids
             {
                 var bullet = new GameObject().SetName("Bullet").AddBoxCollider2D().AddRigidbody2D(2f).AddSprite(_bulletSprite);
                 bullet.gameObject.AddComponent<BulletMarker>();
-                _clip.Add(bullet.GetInstanceID(),bullet);
+                var shipBullet = new Bullet(bullet.GetComponent<Rigidbody2D>());
+                _clip.Add(bullet,shipBullet);
                 bullet.SetActive(false);
             }
         }
 
         public GameObject GetBullet()
         {
-            foreach (var bullet in _clip.Where(item => item.Value.activeInHierarchy == false))
+            var allBullets = Object.FindObjectsOfType<BulletMarker>();
+
+            foreach (var t in allBullets)
             {
-                return bullet.Value;
+                if (t.gameObject.activeInHierarchy == true)
+                    return t.gameObject;
+            }
+            
+            CreateBullets(1);
+            return allBullets.Last().gameObject;
+        }
+
+        public IPlayerInventory GetBulletInterface()
+        {
+            var allBullets = Object.FindObjectsOfType<BulletMarker>();
+            foreach (var t in allBullets)
+            {
+                if (t.gameObject.activeInHierarchy == true)
+                {
+                    if (_clip.ContainsKey(t.gameObject))
+                    {
+                        return _clip[t.gameObject];
+                    }
+                }
             }
             CreateBullets(1);
-            return _clip.Values.Last();
+            return _clip.Last().Value;
         }
 
         public void ReturnBullet(GameObject bullet)
         {
-            _clip[bullet.GetInstanceID()].SetActive(false);
+            var allBullets = Object.FindObjectsOfType<BulletMarker>();
+
+            foreach (var t in allBullets)
+            {
+                if (t.gameObject.GetInstanceID() == bullet.GetInstanceID())
+                   t.gameObject.SetActive(false);
+            }
+            
         }
 
 
@@ -48,6 +82,8 @@ namespace Asteroids
         {
             _bulletMarker.DestroyBullet -= ReturnBullet;
         }
+
+
         
     }
     

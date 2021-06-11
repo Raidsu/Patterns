@@ -52,6 +52,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Aim\Aim.cs" />
+     <Compile Include="Assets\Scripts\Aim\AimModification.cs" />
+     <Compile Include="Assets\Scripts\Aim\Bullet.cs" />
+     <Compile Include="Assets\Scripts\Aim\IAim.cs" />
+     <Compile Include="Assets\Scripts\Aim\IPlayerInventory.cs" />
+     <Compile Include="Assets\Scripts\Aim\ShipWeapon.cs" />
+     <Compile Include="Assets\Scripts\Aim\WeaponModifications.cs" />
      <Compile Include="Assets\Scripts\BulletBuilder\BuilderExtensions.cs" />
      <Compile Include="Assets\Scripts\BulletMarker.cs" />
      <Compile Include="Assets\Scripts\BulletPool.cs" />
@@ -61,8 +68,23 @@
      <Compile Include="Assets\Scripts\EnemyShipFactory.cs" />
      <Compile Include="Assets\Scripts\EnemyShipMove.cs" />
      <Compile Include="Assets\Scripts\GetDamage.cs" />
+     <Compile Include="Assets\Scripts\IAttack.cs" />
      <Compile Include="Assets\Scripts\IDamage.cs" />
      <Compile Include="Assets\Scripts\IEnemyShipFactory.cs" />
+     <Compile Include="Assets\Scripts\LockWeapon\LockWeapon.cs" />
+     <Compile Include="Assets\Scripts\LockWeapon\WeaponProxy.cs" />
+     <Compile Include="Assets\Scripts\MagicAttack.cs" />
+     <Compile Include="Assets\Scripts\Parsing\Infantry.cs" />
+     <Compile Include="Assets\Scripts\Parsing\InfantryFactory.cs" />
+     <Compile Include="Assets\Scripts\Parsing\IUnit.cs" />
+     <Compile Include="Assets\Scripts\Parsing\IUnitFactory.cs" />
+     <Compile Include="Assets\Scripts\Parsing\Mag.cs" />
+     <Compile Include="Assets\Scripts\Parsing\MagFactory.cs" />
+     <Compile Include="Assets\Scripts\Parsing\ParseFile.cs" />
+     <Compile Include="Assets\Scripts\Parsing\ParsingStarter.cs" />
+     <Compile Include="Assets\Scripts\Parsing\UnitFactory.cs" />
+     <Compile Include="Assets\Scripts\PhysicalAttack.cs" />
+     <Compile Include="Assets\Scripts\PlayerAttack.cs" />
      <Compile Include="Assets\Scripts\ServiceLocators\IServiceLocator.cs" />
      <Compile Include="Assets\Scripts\ServiceLocators\ServiceLocator.cs" />
      <Compile Include="Assets\Scripts\Test\Starter.cs" />
