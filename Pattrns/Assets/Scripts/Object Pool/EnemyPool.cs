@@ -61,6 +61,7 @@ namespace Asteroids.Object_Pool
 
                 GetAsteroid(enemies);
             }
+            enemy = enemies.FirstOrDefault(a => !a.gameObject.activeSelf);
             return enemy;
         }
         

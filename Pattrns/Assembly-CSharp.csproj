@@ -52,6 +52,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Aim\Aim.cs" />
+     <Compile Include="Assets\Scripts\Aim\AimModification.cs" />
+     <Compile Include="Assets\Scripts\Aim\Bullet.cs" />
+     <Compile Include="Assets\Scripts\Aim\IAim.cs" />
+     <Compile Include="Assets\Scripts\Aim\IModificationHandler.cs" />
+     <Compile Include="Assets\Scripts\Aim\IPlayerInventory.cs" />
+     <Compile Include="Assets\Scripts\Aim\ModificationHandler.cs" />
+     <Compile Include="Assets\Scripts\Aim\ModificationsChain.cs" />
+     <Compile Include="Assets\Scripts\Aim\ShipWeapon.cs" />
+     <Compile Include="Assets\Scripts\Aim\WeaponModifications.cs" />
+     <Compile Include="Assets\Scripts\BulletBuilder\BuilderExtensions.cs" />
      <Compile Include="Assets\Scripts\BulletMarker.cs" />
      <Compile Include="Assets\Scripts\BulletPool.cs" />
      <Compile Include="Assets\Scripts\Damage.cs" />
@@ -59,9 +70,31 @@
      <Compile Include="Assets\Scripts\EnemyShip.cs" />
      <Compile Include="Assets\Scripts\EnemyShipFactory.cs" />
      <Compile Include="Assets\Scripts\EnemyShipMove.cs" />
+     <Compile Include="Assets\Scripts\GamePoints\PointsConverter.cs" />
+     <Compile Include="Assets\Scripts\GamePoints\PointsInterpretator.cs" />
      <Compile Include="Assets\Scripts\GetDamage.cs" />
+     <Compile Include="Assets\Scripts\IAttack.cs" />
      <Compile Include="Assets\Scripts\IDamage.cs" />
      <Compile Include="Assets\Scripts\IEnemyShipFactory.cs" />
+     <Compile Include="Assets\Scripts\LockWeapon\LockWeapon.cs" />
+     <Compile Include="Assets\Scripts\LockWeapon\WeaponProxy.cs" />
+     <Compile Include="Assets\Scripts\MagicAttack.cs" />
+     <Compile Include="Assets\Scripts\Memento\MementoController.cs" />
+     <Compile Include="Assets\Scripts\Memento\PointInTime.cs" />
+     <Compile Include="Assets\Scripts\Memento\TimeBody.cs" />
+     <Compile Include="Assets\Scripts\Parsing\Infantry.cs" />
+     <Compile Include="Assets\Scripts\Parsing\InfantryFactory.cs" />
+     <Compile Include="Assets\Scripts\Parsing\IUnit.cs" />
+     <Compile Include="Assets\Scripts\Parsing\IUnitFactory.cs" />
+     <Compile Include="Assets\Scripts\Parsing\Mag.cs" />
+     <Compile Include="Assets\Scripts\Parsing\MagFactory.cs" />
+     <Compile Include="Assets\Scripts\Parsing\ParseFile.cs" />
+     <Compile Include="Assets\Scripts\Parsing\ParsingStarter.cs" />
+     <Compile Include="Assets\Scripts\Parsing\UnitFactory.cs" />
+     <Compile Include="Assets\Scripts\PhysicalAttack.cs" />
+     <Compile Include="Assets\Scripts\PlayerAttack.cs" />
+     <Compile Include="Assets\Scripts\ServiceLocators\IServiceLocator.cs" />
+     <Compile Include="Assets\Scripts\ServiceLocators\ServiceLocator.cs" />
      <Compile Include="Assets\Scripts\Test\Starter.cs" />
      <Compile Include="Assets\Scripts\Test\IAmmunition.cs" />
      <Compile Include="Assets\Scripts\RotationShip.cs" />
@@ -107,6 +140,9 @@
      <Compile Include="Assets\Scripts\Abstrac Factory\IPlatform.cs" />
      <Compile Include="Assets\Scripts\Test\IWeapon.cs" />
      <Compile Include="Assets\Scripts\IMove.cs" />
+     <Compile Include="Assets\Scripts\UInterface\DispleyableUserInterface.cs" />
+     <Compile Include="Assets\Scripts\UInterface\IDisplayableUserInterface.cs" />
+     <Compile Include="Assets\Scripts\UInterface\ViewPoints.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
@@ -725,8 +761,6 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/Любовь/Desktop/Pattrns/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
