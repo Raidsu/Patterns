@@ -1,4 +1,6 @@
-﻿using Asteroids.Object_Pool;
+﻿using Asteroids.Aim;
+using Asteroids.LockWeapon;
+using Asteroids.Object_Pool;
 using UnityEngine;
 
 namespace Asteroids
@@ -10,11 +12,22 @@ namespace Asteroids
         [SerializeField] private float _hp;
         [SerializeField] private Sprite _bullet;
         [SerializeField] private Transform _barrel;
+        [SerializeField] private Vector2 _aimPosition;
+        [SerializeField] private GameObject _aimInstanse;
         [SerializeField] private float _force;
+        [SerializeField] private float _aimDistance;
+        
         private Camera _camera;
         private Ship _ship;
         private GetDamage _damage;
-        
+        private ShipWeapon _weapon;
+        private Aim.Aim _aim;
+        private IAttack _attack;
+        private WeaponModifications _weaponModifications;
+        private bool isAimed = false;
+        private LockWeapon.LockWeapon _lockWeapon;
+        private WeaponProxy _weaponProxy;
+        private ModificationsChain _modificationsChain;
         
         private void Start()
         {
@@ -23,8 +36,16 @@ namespace Asteroids
             var rotation = new RotationShip(transform);
             _ship = new Ship(moveTransform, rotation);
             _damage = new GetDamage();
-            ServiceLocator.SetService<IServiceLocator>(new BulletPool(_bullet));
             ServiceLocator.Resolve<IServiceLocator>().CreateBullets(20);
+            _lockWeapon = new LockWeapon.LockWeapon(false);
+            _modificationsChain = new ModificationsChain(new BulletPool(_bullet), _barrel, _force);
+            _weapon = _modificationsChain.Weapon;
+            _weaponProxy = new WeaponProxy(_weapon, _lockWeapon);
+            
+            _aim = new Aim.Aim(_aimDistance, _barrel, _aimInstanse);
+            _attack = _weaponModifications;
+            
+
         }
 
         private void Update()
@@ -43,13 +64,35 @@ namespace Asteroids
             {
                 _ship.RemoveAcceleration();
             }
-
-            if (Input.GetButtonDown("Fire1"))
+            
+            if (Input.GetMouseButtonDown(1))
             {
-                var temAmmunition = ServiceLocator.Resolve<IServiceLocator>().GetBullet();
-                temAmmunition.transform.position = _barrel.position;
-                temAmmunition.transform.rotation = _barrel.rotation;
-                temAmmunition.GetComponent<Rigidbody2D>().AddForce(_barrel.up * _force);
+                if (!isAimed)
+                {
+                    _weaponModifications = new AimModification(_aimPosition, _aim);
+                    _weaponModifications.ApplyModification(_weapon);
+                    isAimed = !isAimed;
+                }
+                else
+                {
+                    _weaponModifications.DeleteModification(_weapon);
+                    isAimed = !isAimed;
+                }    
+            }
+            
+            if (Input.GetMouseButtonDown(0))
+            {
+                var jammingProbability = Random.Range(0, 11);
+                if (jammingProbability < 4)
+                    _lockWeapon.IsLocked = true;
+                
+                _weaponProxy.Attack();
+            }
+            
+            if (Input.GetKeyDown(KeyCode.H))
+            {
+                _lockWeapon.IsLocked = false;
+                Debug.Log("Weapon is unlocked");
             }
         }
 

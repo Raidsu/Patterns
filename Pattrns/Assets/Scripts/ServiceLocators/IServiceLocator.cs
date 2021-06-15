@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Asteroids.Aim;
+using UnityEngine;
 
 namespace Asteroids
 {
@@ -6,6 +7,7 @@ namespace Asteroids
     {
         public void CreateBullets(int numOfBulletsToCreate);
         public GameObject GetBullet();
+        public IPlayerInventory GetBulletInterface();
         public void ReturnBullet(GameObject bullet);
 
     }
