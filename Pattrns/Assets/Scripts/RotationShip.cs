@@ -4,7 +4,7 @@ namespace Asteroids
 {
     internal sealed class RotationShip : IRotation
     {
-        private readonly Transform _transform;
+        public Transform _transform;
         
         public RotationShip(Transform transform)
         {
