@@ -1,4 +1,5 @@
 ﻿using System;
+using Asteroids.DestroyedEnemyObserver;
 using Asteroids.Object_Pool;
 using TreeEditor;
 using UnityEngine;
@@ -6,7 +7,7 @@ using Random = UnityEngine.Random;
 
 namespace Asteroids
 {
-    public abstract class Enemy : MonoBehaviour
+    public abstract class Enemy : MonoBehaviour, IDestroyedEnemy 
     {
         public static IEnemyFactory Factory;
         public static IEnemyShipFactory ShipFactory;
@@ -14,8 +15,15 @@ namespace Asteroids
         private Health _health;
         private Damage _damage;
         private Rigidbody2D _rigidbody;
+        private EnemyDestroyListener _enemyDestroyListener;
         private const int MsgbrokerDestroymessage = 1;
 
+        public Enemy()
+        {
+            _enemyDestroyListener = new EnemyDestroyListener();
+            _enemyDestroyListener.Add(this);
+        }
+        
         public Damage Damage
         {
             get
@@ -30,6 +38,7 @@ namespace Asteroids
             {
                 if (_health.Current <= 0.0f)
                 {
+                    ReportEnemyDestroyed(gameObject);
                     ReturnToPool();
                 }
                 return _health;
@@ -76,7 +85,6 @@ namespace Asteroids
             enemy.transform.position = Vector3.one;
             enemy.gameObject.SetActive(true);
             enemy._health = hp;
-        
             return enemy;
         }
         
@@ -123,6 +131,12 @@ namespace Asteroids
             var flightVector = Random.insideUnitCircle;
             _rigidbody = gameObject.GetComponent<Rigidbody2D>();
             _rigidbody.AddForce(new Vector2(flightVector.x,flightVector.y),ForceMode2D.Impulse);
+        }
+
+        public event Action<GameObject> OnEnemyDestroyed = delegate(GameObject enemy) {  };
+        public void ReportEnemyDestroyed(GameObject enemy)
+        {
+            OnEnemyDestroyed.Invoke(enemy);
         }
     }
 }

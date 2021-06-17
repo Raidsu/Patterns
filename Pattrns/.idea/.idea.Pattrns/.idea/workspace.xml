@@ -2,36 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="010c87b3-4dad-421e-bbab-92d314f958e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/IModificationHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/IModificationHandler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/ModificationHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/ModificationHandler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/ModificationsChain.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/ModificationsChain.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GamePoints.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GamePoints/PointsConverter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GamePoints/PointsConverter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GamePoints/PointsInterpretator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GamePoints/PointsInterpretator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Memento.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Memento/MementoController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Memento/MementoController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Memento/PointInTime.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Memento/PointInTime.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Memento/TimeBody.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Memento/TimeBody.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UInterface.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UInterface/DispleyableUserInterface.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UInterface/DispleyableUserInterface.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UInterface/IDisplayableUserInterface.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UInterface/IDisplayableUserInterface.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UInterface/ViewPoints.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UInterface/ViewPoints.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DestroyedEnemyObserver.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DestroyedEnemyObserver/EnemyDestroyListener.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DestroyedEnemyObserver/EnemyDestroyListener.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DestroyedEnemyObserver/IDestroyedEnemy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DestroyedEnemyObserver/IDestroyedEnemy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMotion.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMotion/MotionStates.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMotion/MotionStates.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMotion/MoveForward.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMotion/MoveForward.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMotion/State.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMotion/State.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pattrns/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pattrns/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Aim/WeaponModifications.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Aim/WeaponModifications.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoveTransform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoveTransform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RotationShip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RotationShip.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,34 +30,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAFB29D5-2338-47FB-B4ED-CF8D7C32B1E3/2d/fcdeaee8/IObservable`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3C9E850C-90C5-48A0-AF7E-388089BBDAE9/91/2eae9cd6/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAFB29D5-2338-47FB-B4ED-CF8D7C32B1E3/b4/ab70e2f3/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10564ED1-54D6-47E1-94BE-F4AEF8878649/b7/4a77c2fd/Random.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAFB29D5-2338-47FB-B4ED-CF8D7C32B1E3/28/ed0fee40/File.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Parsing/ParseFile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAFB29D5-2338-47FB-B4ED-CF8D7C32B1E3/42/273c6b76/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAFB29D5-2338-47FB-B4ED-CF8D7C32B1E3/2d/fcdeaee8/IObservable`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3C9E850C-90C5-48A0-AF7E-388089BBDAE9/91/2eae9cd6/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Parsing/IUnitFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAFB29D5-2338-47FB-B4ED-CF8D7C32B1E3/b4/ab70e2f3/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Parsing/UnitFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAFB29D5-2338-47FB-B4ED-CF8D7C32B1E3/de/ec41d8b4/StreamReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10564ED1-54D6-47E1-94BE-F4AEF8878649/b7/4a77c2fd/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2C6458F0-50DD-4D92-9993-A8FEC6D28E20/e1/6958b61f/UICharInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAFB29D5-2338-47FB-B4ED-CF8D7C32B1E3/28/ed0fee40/File.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Parsing/MagFactory.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Aim/ShipWeapon.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Aim/IPlayerInventory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Aim/Bullet.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ServiceLocators/IServiceLocator.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BulletPool.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Aim/IAim.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Aim/AimModification.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Aim/Aim.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/LockWeapon/LockWeapon.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/LockWeapon/WeaponProxy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Parsing/IUnit.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Parsing/Mag.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Parsing/Infantry.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Parsing/IMagFactory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Parsing/IInfantryFactory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Parsing/ParseFile.cs" />
@@ -107,7 +82,20 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/InternalUtil/ThreadSafeQueueWorker.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/InternalUtil/UnityEqualityComparer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MessageBroker/MessageBroker.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DestroyedEnemyObserver/IDestroyedEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DestroyedEnemyObserver/EnemyDestroyListener.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/IMove.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ship.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RotationShip.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/StateMotion/State.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MoveTransform.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/StateMotion/MotionStates.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/StateMotion/MoveForward.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EnemyLogger/IEnemyLogger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EnemyLogger/EnemyProxy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EnemyLogger/EnemyLogger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Asteroid.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ie46dTaFKVMP6XiiGtdSalAgvM" />
@@ -179,6 +167,7 @@
       <workItem from="1623393493762" duration="6165000" />
       <workItem from="1623400196801" duration="54000" />
       <workItem from="1623738379408" duration="11398000" />
+      <workItem from="1623910043109" duration="4598000" />
     </task>
     <servers />
   </component>

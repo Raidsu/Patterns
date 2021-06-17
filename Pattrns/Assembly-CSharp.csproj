@@ -66,6 +66,8 @@
      <Compile Include="Assets\Scripts\BulletMarker.cs" />
      <Compile Include="Assets\Scripts\BulletPool.cs" />
      <Compile Include="Assets\Scripts\Damage.cs" />
+     <Compile Include="Assets\Scripts\DestroyedEnemyObserver\EnemyDestroyListener.cs" />
+     <Compile Include="Assets\Scripts\DestroyedEnemyObserver\IDestroyedEnemy.cs" />
      <Compile Include="Assets\Scripts\EnemyMarker.cs" />
      <Compile Include="Assets\Scripts\EnemyShip.cs" />
      <Compile Include="Assets\Scripts\EnemyShipFactory.cs" />
@@ -95,6 +97,9 @@
      <Compile Include="Assets\Scripts\PlayerAttack.cs" />
      <Compile Include="Assets\Scripts\ServiceLocators\IServiceLocator.cs" />
      <Compile Include="Assets\Scripts\ServiceLocators\ServiceLocator.cs" />
+     <Compile Include="Assets\Scripts\StateMotion\MotionStates.cs" />
+     <Compile Include="Assets\Scripts\StateMotion\MoveForward.cs" />
+     <Compile Include="Assets\Scripts\StateMotion\State.cs" />
      <Compile Include="Assets\Scripts\Test\Starter.cs" />
      <Compile Include="Assets\Scripts\Test\IAmmunition.cs" />
      <Compile Include="Assets\Scripts\RotationShip.cs" />
